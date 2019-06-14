@@ -1,11 +1,12 @@
 ####难点
 
-在安装 bcrypt 的时候一直在报错，安装不上
+    在安装 bcrypt 的时候一直在报错，安装不上
 
 ##使用 post 请求
 安装 body-parser
 
-引入和使用
+    引入和使用
+
 const bodyParser = require("body-parser");
 app.use(
 bodyParser.urlencoded({
@@ -35,6 +36,7 @@ d: "mm" //是一个头像
 
 1.安装模块 concurrently
 npm i concurrently
+
 在 vue 的 package.json 中输入
 "start": "npm run serve"
 
@@ -47,3 +49,11 @@ npm i concurrently
 "dev": "concurrently \"npm run server\"（启动后端） \"npm run client\"（启动前端）"
 
 ## http.js 文件是用来放加载动画效果的
+
+    请求拦截和响应拦截
+
+    对token的过期处理
+
+## 解析 token，安装模块 jwt-decode
+
+    在登陆页面使用
